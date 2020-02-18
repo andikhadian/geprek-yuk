@@ -3,10 +3,11 @@ h2 {
   font-size: 60px;
   text-align: center;
   font-family: "ArcadeClassic";
-  margin: 10;
+  margin: 0;
 }
 
 button {
+  margin-top: 20px;
   display: block;
   margin: auto;
   width: 100px;

@@ -1,6 +1,7 @@
 const tanah = document.querySelectorAll(".tanah");
 const dims = document.querySelectorAll(".dims");
 const scorBoard = document.querySelector(".scor");
+const go = document.querySelector(".gameOver");
 const pop = document.querySelector("#pop");
 let ts;
 let finish;
@@ -39,7 +40,7 @@ function play() {
   showDims();
   setTimeout(() => {
     finish = true;
-    scorBoard.textContent = "Game Over";
+    go.textContent = "Game Over";
   }, 12000);
 }
 

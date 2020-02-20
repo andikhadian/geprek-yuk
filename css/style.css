@@ -2,6 +2,11 @@ body {
   background-image: url(../img/forest.png);
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: url("../img/palu1.png"), auto;
+}
+
+body:active {
+  cursor: url("../img/palu2.png"), auto;
 }
 h1,
 h2 {
@@ -34,11 +39,6 @@ button {
   width: 600px;
   padding-top: 50px;
   margin: auto;
-  cursor: url("../img/palu1.png"), auto;
-}
-
-.container:active {
-  cursor: url("../img/palu2.png"), auto;
 }
 
 .tanah {

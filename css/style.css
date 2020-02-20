@@ -1,21 +1,38 @@
+body {
+  background-image: url(../img/forest.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 h1,
 h2 {
   font-size: 60px;
   text-align: center;
   font-family: "ArcadeClassic";
+  color: #b67e60;
   margin: 0;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 button {
+  border-radius: 100px;
+  background-color: #b67e60;
   margin-top: 20px;
   display: block;
   margin: auto;
   width: 100px;
   height: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  text-decoration: none;
 }
 
 .container {
   width: 600px;
+  padding-top: 50px;
   margin: auto;
   cursor: url("../img/palu1.png"), auto;
 }

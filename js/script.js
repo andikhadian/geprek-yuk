@@ -3,6 +3,7 @@ const dims = document.querySelectorAll(".dims");
 const scorBoard = document.querySelector(".scor");
 const go = document.querySelector(".gameOver");
 const pop = document.querySelector("#pop");
+const bg = document.querySelector("#bg");
 let ts;
 let finish;
 let scor;
@@ -34,14 +35,24 @@ function showDims() {
 }
 
 function play() {
+  bg.play();
   finish = false;
   scor = 0;
   scorBoard.textContent = 0;
+  go.textContent = "";
   showDims();
-  setTimeout(() => {
-    finish = true;
-    go.textContent = "Game Over";
-  }, 12000);
+  go.textContent = "20 Sec";
+  var timeleft = 20;
+  var downloadTimer = setInterval(() => {
+    if (timeleft <= 0) {
+      finish = true;
+      clearInterval(downloadTimer);
+      go.textContent = "Game Over";
+    } else {
+      go.textContent = timeleft + " Sec";
+    }
+    timeleft -= 1;
+  }, 1000);
 }
 
 function hit() {
